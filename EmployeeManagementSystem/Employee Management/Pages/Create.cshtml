@@ -1,0 +1,25 @@
+﻿@page
+@model Employee_Management.Pages.CreateModel
+@{
+}
+
+<form method="post">
+    @*To submit all fields to the targeted action method*@
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control mb-3" asp-for="Employee!.FirstName" id="txtFirstName" placeholder="First Name" name="FirstName">
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control mb-3" asp-for="Employee!.LastName" id="txtLastName" placeholder="Last Name" name="LastName">
+    </div>
+    <div class="form-group">
+        <label>Position</label>
+        <input type="text" class="form-control mb-3" asp-for="Employee!.Position" id="txtPosition" placeholder="Position" name="Position">
+    </div>
+    <div class="form-group">
+        <label>Salary</label>
+        <input type="text" class="form-control mb-3" asp-for="Employee!.Salary" id="txtStreet" placeholder="Salary" name="Salary">
+    </div>
+    <button class="btn btn-success">Create</button>
+</form>
