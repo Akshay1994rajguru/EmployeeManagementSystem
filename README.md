@@ -13,3 +13,11 @@ Requirements:
 Deliverables:
  GitHub repository URL of the codebase
  Project Documentation
+
+#Tools and technologies or framework
+1. ASP.NET Web API
+2. ASP.NET Core - Razor Pages
+3. SQL Server
+4. Token Based authentication
+5. Entity Framework Core
+6. .NET 8
