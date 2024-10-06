@@ -46,7 +46,7 @@ namespace EmsServices.Controllers
 
         //Add a new Users
         [HttpPost]
-        [Route("AddUsers")]
+        [Route("AddEmployee")]
         public async Task<IActionResult> Post(Employee employee)
         {
             var result = await _employee.AddEmployee(employee);
@@ -70,7 +70,7 @@ namespace EmsServices.Controllers
         }
         //Delete a Users
         [HttpDelete]
-        [Route("DeleteEmployee")]
+        [Route("DeleteEmployee/{id}")]
         public IActionResult Delete(int id)
         {
             var result = _employee.DeleteEmployee(id);
