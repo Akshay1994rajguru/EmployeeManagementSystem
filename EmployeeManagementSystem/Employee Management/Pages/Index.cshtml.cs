@@ -21,7 +21,7 @@ namespace Employee_Management.Pages
         {
             var token = "";
             token= ValidateToken();
-            if (token != "")
+            if (token == "")
             {
                 token= GenerateToken();
                 HttpContext.Response.Cookies.Append("token", token,
@@ -37,7 +37,7 @@ namespace Employee_Management.Pages
         {
             var token = "";
             token = ValidateToken();
-            if (token != "")
+            if (token == "")
             {
                 token = GenerateToken();
                 HttpContext.Response.Cookies.Append("token", token,
